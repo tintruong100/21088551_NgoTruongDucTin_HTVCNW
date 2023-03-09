@@ -7,43 +7,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuan1&2_Bai6</title>
     <style>
-        #cella4 {
-            background-color: orange;
+        table, th, td {
+            border: 1px solid #777;
         }
-        
-        #cella5 {
-            background-color: orange;
+        #table_a{
+            margin: 20px auto;
+            box-shadow: 0 0 5px 5px #999;
+            display: block;
+            padding: 10px;
+            width: 260px;
+            background-color: rgb(222, 215, 197);
         }
-        
-        #cella7 {
-            background-color: orange;
+        #table_a td {
+            padding: 20px;
+            text-align: center;
         }
-        
-        #cella8 {
-            background-color: orange;
+        .table_b1{
+            box-shadow: 0 0 5px 5px #999;
+            padding: 10px;
+            width: fit-content;
+            background-color: lightyellow;
+        }
+        .number {
+            text-align: center;
+        }
+        .content {
+            text-decoration: underline;
+            text-align: left;
+            color: darkred;
+        }
+        .table_b2{
+            margin: 20px 20px;
+            margin-bottom: 0px;
+            box-shadow: 0 0 5px 5px #999;
+            width: 200px;
+            height: 120px;
+            padding: 10px;
+            background-color: white;
+        }
+        .cellpadding td {
+            padding: 6.470px;
+        }
+        .table_b3{
+            margin: 20px 20px;
+            margin-bottom: 0px;
+            box-shadow: 0 0 5px 5px #999;
+            width: 200px;
+            height: 120px;
+            padding: 10px;
+            background-color: white;
+        }
+        .cau_b {
+            align-items: flex-end;
+            margin-top: 50px;
+        }
+        .cau_c {
+            margin: 20px auto;
+            background-color: #faaa50;
+            padding: 4px;
+            width: fit-content;
+            box-shadow: 0 0 5px 5px #888;
+        }
+        .cau_c th,
+        .cau_c td {
+            border: 1px solid #d855b1;
+        }
+        .cau_c table {
+            border: 2px solid #d855b1;
+            background-color: #d889c0;
+        }
+        .box_c  caption {
+            color: #9e2178;
+            font-weight: 600;
+        }
+        .table_c tr td:first-child {
+            background-color: aqua !important;
+            padding: 3px;
+        }
+
+        .table_c tr td {
+            background-color: rgb(255, 206, 244);
+            color: rgb(59, 142, 236);
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        .chu {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .so {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
 </head>
-
 <body>
-    <div>a.</div>
-    <table border="1">
-        <tr>
-            <td id="cella1">1</td>
-            <td id="cella2" colspan="4">2</td>
-        </tr>
-        <tr>
-            <td id="cella3" rowspan="3">3</td>
-            <td id="cella4">4</td>
-            <td id="cella5">5</td>
-            <td id="cella6" colspan="2" rowspan="2">6</td>
-        </tr>
-        <tr>
-            <td id="cella7">7</td>
-            <td id="cella8">8</td>
-        </tr>
-    </table>
-
+    <p>a</p>
+    <div id="cau_a">
+        <div id="table_a">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="background-color: white;">1</td>
+                        <td colspan="4" style="background-color: white;">2</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" style="background-color: white;">3</td>
+                        <td style="background-color: orange;">4</td>
+                        <td style="background-color: orange;">5</td>
+                        <td rowspan="2" clospan="2" style="background-color: yellow;">6</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: orange;">7</td>
+                        <td style="background-color: orange;">8</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="background-color: yellow;">9</td>
+                        <td colspan="2" style="padding-left: 40px; padding-right: 40px; background-color: yellow;">10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>b</p>
+    <div class="cau_b" style="display: flex; ">
+        <div class="table_b1">
+            <table>
+                <tr class="number">
+                    <td>(1)</td>
+                    <td>(2)</td>
+                    <td>(3)</td>
+                    <td style="padding-left: 20px; padding-right: 20px;">(4)</td>
+                    <td>(5)</td>
+                </tr>
+                <tr class="content">
+                    <td></td>
+                    <td colspan="3" style="text-underline-position: auto;">Part I</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="2"></td>
+                    <td colspan="2">Chapter 1</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section A</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section B</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="2"></td>
+                    <td colspan="2">Chapter 2</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section A</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section B</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td></td>
+                    <td colspan="3" style="text-underline-position: auto;">Part II</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="2"></td>
+                    <td colspan="2">Chapter 3</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section A</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section B</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="2"></td>
+                    <td colspan="2">Chapter 4</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section A</td>
+                    <td></td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3"></td>
+                    <td>Section B</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table_b2">
+            <div style="margin-bottom: 20px; font-weight: bold;">With cellpadding:</div>
+            <table class="cellpadding">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table_b3">
+            <div style="margin-bottom: 20px; font-weight: bold;"> Table with spanning row:</div>
+            <table class="spanning_row">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p>c</p>
+    <div class="cau_c">
+        <div class="table_c">
+            <table>
+                <caption style="font-weight: bold; color: #d855b1;">NUMBERS 1-5 in VARIOUS LANGUAGES</caption>
+                <tr>
+                    <th></th>
+                    <th class="language">English</th>
+                    <th class="language">Espanol</th>
+                    <th class="language">Francais</th>
+                    <th class="language">Italiano</th>
+                    <th class="language">Deutsch</th>
+                </tr>
+                <tr>
+                    <td class="so">1</td>
+                    <td class="chu">one</td>
+                    <td class="chu">uno</td>
+                    <td class="chu">un</td>
+                    <td class="chu">uno</td>
+                    <td class="chu">eins</td>
+                </tr>
+                <tr>
+                    <td class="so">2</td>
+                    <td class="chu">two</td>
+                    <td class="chu">dos</td>
+                    <td class="chu">deux</td>
+                    <td class="chu">due</td>
+                    <td class="chu">zwei</td>
+                </tr>
+                <tr>
+                    <td class="so">3</td>
+                    <td class="chu">three</td>
+                    <td class="chu">tres</td>
+                    <td class="chu">trois</td>
+                    <td class="chu">tre</td>
+                    <td class="chu">drei</td>
+                </tr>
+                <tr>
+                    <td class="so">4</td>
+                    <td class="chu">four</td>
+                    <td class="chu">cuatro</td>
+                    <td class="chu">quatre</td>
+                    <td class="chu">quattro</td>
+                    <td class="chu">vier</td>
+                </tr>
+                <tr>
+                    <td class="so">5</td>
+                    <td class="chu">five</td>
+                    <td class="chu">cinco</td>
+                    <td class="chu">cinq</td>
+                    <td class="chu">cinque</td>
+                    <td class="chu">funf</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
